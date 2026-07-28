@@ -5,23 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GIRO GPS + Clima - Política de Privacidade</title>
   <style>
-    @font-face {
-      font-family: NimbusSans;
-      src: url("../fonts/NimbusSans-Regular.otf") format("opentype");
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: NimbusSans;
-      src: url("../fonts/NimbusSans-Bold.otf") format("opentype");
-      font-weight: 700;
-      font-style: normal;
+    :root {
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     body {
       margin: 0;
-      font-family: NimbusSans, sans-serif;
+      font-family: var(--font-sans);
       line-height: 1.6;
       background: #0f172a;
       color: #e5e7eb;
@@ -69,13 +59,13 @@
 <body>
 <main>
   <h1>Política de Privacidade do GIRO GPS + Clima</h1>
-  <p class="muted">Última atualização: 22 de julho de 2026</p>
+  <p class="muted">Última atualização: 27 de julho de 2026</p>
 
   <div class="box">
     <p><strong>Contato de suporte e privacidade:</strong><br>
       <a href="mailto:suporte.girogpsclima@gmail.com">suporte.girogpsclima@gmail.com</a>
     </p>
-    <p>Esta política se aplica ao aplicativo GIRO GPS + Clima, pacote Android <code>com.opensource.giro.giro</code>, e ao pacote complementar Expedition App desktop quando distribuído junto ao projeto GIRO.</p>
+    <p>Esta política se aplica ao aplicativo GIRO GPS + Clima, pacote Android <code>com.opensource.giro.giro</code>, e ao pacote complementar Giro Planejador desktop quando distribuído junto ao projeto GIRO.</p>
   </div>
 
   <h2>1. Sobre o aplicativo</h2>
@@ -91,7 +81,8 @@
     <li>não há telemetria comercial, analytics de marketing, rastreamento publicitário ou criação de perfil para venda;</li>
     <li>não vendemos, alugamos, compartilhamos para monetização ou negociamos dados de usuários;</li>
     <li>não usamos dados de localização, rotas, buscas ou preferências para publicidade, pontuação comercial, corretagem de dados ou segmentação de anúncios;</li>
-    <li>não exigimos nome, e-mail, telefone, documento ou qualquer identificação pessoal para usar o aplicativo.</li>
+    <li>não exigimos nome, e-mail, telefone, documento ou qualquer identificação pessoal para usar o aplicativo;</li>
+    <li>não criamos identificador digital próprio do GIRO para reconhecer o usuário em servidor, conta, publicidade ou telemetria.</li>
   </ul>
   <p>O aplicativo móvel não usa cookies próprios para rastrear o usuário. As preferências ficam no armazenamento local do app, como SQLite e <code>shared_preferences</code>, e não em cookies publicitários. Se o usuário abrir links externos no navegador, esses sites externos podem aplicar suas próprias políticas.</p>
 
@@ -146,7 +137,7 @@
     <li>Photon;</li>
     <li>TomTom, quando o usuário fornece uma chave própria.</li>
   </ul>
-  <p>Esses serviços são usados para clima, mapas, tiles, rotas, geocodificação, pontos de interesse, tráfego ou infraestrutura de rota. O GIRO GPS + Clima não envia nome, e-mail, cadastro ou identificador próprio de conta, porque o app não possui esses dados. Ainda assim, provedores externos podem receber informações técnicas normais de rede, como IP, User-Agent e a própria consulta necessária, conforme as políticas de cada serviço. O GIRO GPS + Clima não controla as políticas de privacidade desses terceiros.</p>
+  <p>Esses serviços são usados para clima, mapas, tiles, rotas, geocodificação, pontos de interesse, tráfego ou infraestrutura de rota. O GIRO GPS + Clima não envia nome, e-mail, cadastro, identificador próprio de conta, identificador publicitário ou identificador digital próprio do GIRO, porque o app não possui esses dados. Ainda assim, provedores externos podem receber informações técnicas normais de rede, como IP, User-Agent, coordenadas e a própria consulta necessária, conforme as políticas de cada serviço. O tratamento desses dados pelos provedores segue os termos e políticas de privacidade deles. O GIRO GPS + Clima não controla as políticas de privacidade desses terceiros.</p>
 
   <h2>6. Open-Meteo e uso não comercial</h2>
   <p>O GIRO GPS + Clima usa a API gratuita da Open-Meteo apenas no contexto de um projeto pessoal, gratuito, sem assinatura, sem publicidade e sem fins comerciais. Esse uso segue a condição de uso não comercial indicada pela Open-Meteo para a API gratuita, respeitando os limites operacionais aplicáveis.</p>
@@ -156,12 +147,12 @@
   <p>O app pode armazenar dados localmente no dispositivo, incluindo rotas salvas, expedições, planos importados por arquivo <code>planTrip.json</code>, infraestrutura offline, cache/SQLite offline, cache climático temporário, âncoras de rota, preferências do usuário e chave TomTom quando fornecida.</p>
   <p>Esses dados ficam no armazenamento do aplicativo no dispositivo. Nesta fase, o app não possui servidor próprio de conta, sincronização ou identificação de usuário.</p>
 
-  <h2>7.1. Expedition App desktop</h2>
-  <p>O Expedition App desktop é um pacote complementar de planejamento de viagens para computador, distribuído como PWA local para Windows, Linux e macOS. Ele não inclui instaladores Android ou iOS.</p>
-  <p>O Expedition App desktop usa um servidor local temporário em <code>http://127.0.0.1:18473</code> apenas para carregar a PWA no navegador com origem fixa. O pacote não possui servidor próprio remoto e não envia automaticamente banco, expedições, coordenadas, checklists, riscos ou histórico para nenhum provedor fora do computador.</p>
-  <p>Os dados do Expedition App desktop ficam armazenados internamente no navegador usado na instalação, em SQLite local com OPFS quando disponível. Trocar navegador, perfil, host ou porta cria outro armazenamento local. Limpar dados do site, limpar armazenamento/cache do navegador, remover a PWA, reinstalar ou apagar manualmente dados do navegador pode excluir ou isolar os dados armazenados localmente.</p>
-  <p>Para preservar ou transferir o planejamento do Expedition App desktop, o usuário deve exportar um backup SQLite pelo menu de dados e relatórios antes de trocar computador, navegador, perfil, porta ou limpar dados do navegador.</p>
-  <p>O Expedition App desktop pode abrir links externos do Google Maps para rota ou busca usando coordenadas e nomes informados no planejamento. Esse acesso externo ocorre somente quando o usuário abre o link e fica sujeito aos termos e políticas do serviço externo acessado.</p>
+  <h2>7.1. Giro Planejador desktop</h2>
+  <p>O Giro Planejador desktop é um pacote complementar de planejamento de viagens para computador, distribuído como PWA local para Windows, Linux e macOS. Ele não inclui instaladores Android ou iOS.</p>
+  <p>O Giro Planejador desktop usa um servidor local temporário em <code>http://127.0.0.1:18473</code> apenas para carregar a PWA no navegador com origem fixa. O pacote não possui servidor próprio remoto e não envia automaticamente banco, expedições, coordenadas, checklists, riscos ou histórico para nenhum provedor fora do computador.</p>
+  <p>Os dados do Giro Planejador desktop ficam armazenados internamente no navegador usado na instalação, em SQLite local com OPFS quando disponível. Trocar navegador, perfil, host ou porta cria outro armazenamento local. Limpar dados do site, limpar armazenamento/cache do navegador, remover a PWA, reinstalar ou apagar manualmente dados do navegador pode excluir ou isolar os dados armazenados localmente.</p>
+  <p>Para preservar ou transferir o planejamento do Giro Planejador desktop, o usuário deve exportar um backup SQLite pelo menu de dados e relatórios antes de trocar computador, navegador, perfil, porta ou limpar dados do navegador.</p>
+  <p>O Giro Planejador desktop pode abrir links externos do Google Maps para rota ou busca usando coordenadas e nomes informados no planejamento. Esse acesso externo ocorre somente quando o usuário abre o link e fica sujeito aos termos e políticas do serviço externo acessado.</p>
 
   <h2>8. Chave TomTom</h2>
   <p>A chave TomTom é opcional e inserida pelo usuário. Ela é usada somente para acionar os serviços TomTom configurados no app.</p>
@@ -172,12 +163,13 @@
 
   <h2>10. Localização</h2>
   <p>A localização é essencial para mapa, navegação, rota, clima contextual e alertas de estrada.</p>
-  <p>Para as funcionalidades principais do GIRO GPS + Clima, a coleta de localização aproximada e precisa é obrigatória. Durante a navegação, o app pode usar serviço em primeiro plano para manter a localização ativa enquanto o piloto usa o aplicativo. Em Android Auto, o acesso à localização pode exigir tratamento semelhante a serviço em primeiro plano.</p>
+  <p>Para as funcionalidades principais do GIRO GPS + Clima, a coleta de localização aproximada e precisa é necessária. Durante uma navegação ou acompanhamento de rota iniciado pelo usuário, o app pode manter a localização ativa em segundo plano quando não estiver visível, por exemplo enquanto o usuário usa Google Maps ou outro navegador principal. Essa continuidade permite atuar como copiloto para alertas de hazards, clima, infraestrutura e riscos na rota traçada.</p>
+  <p>O GIRO não inicia esse uso silenciosamente sem permissão do usuário. A localização em segundo plano não é usada para anúncios, venda de dados, telemetria comercial ou perfilamento.</p>
 
   <h2>11. Retenção e exclusão de dados</h2>
   <p>O GIRO GPS + Clima não possui conta de usuário, servidor próprio de armazenamento de dados pessoais ou mecanismo remoto para exclusão de dados no aparelho do usuário.</p>
-  <p>Dados locais permanecem no dispositivo até que o usuário remova a chave TomTom, quando esse controle estiver disponível, exclua rotas ou expedições pela interface do aplicativo, limpe os dados do aplicativo nas configurações do Android, desinstale o aplicativo ou apague manualmente arquivos de backup criados fora do aplicativo.</p>
-  <p>Como o GIRO GPS + Clima não armazena esses dados em servidor próprio, o desenvolvedor não consegue excluir remotamente dados que estejam apenas no aparelho do usuário.</p>
+  <p>Dados locais permanecem no dispositivo até que o usuário limpe os dados do aplicativo nas configurações do Android, desinstale o aplicativo ou, quando houver controle disponível na interface, remova itens locais específicos como rotas, expedições ou chave TomTom. Arquivos de backup, JSON, DB ou outros arquivos exportados ficam fora do armazenamento interno do app e precisam ser apagados manualmente pelo usuário no local onde foram salvos ou compartilhados.</p>
+  <p>Como o GIRO GPS + Clima não armazena esses dados em servidor próprio, o desenvolvedor não consegue excluir remotamente dados que estejam apenas no aparelho do usuário. Dados de coordenadas ou consultas recebidos por provedores externos para execução de mapa, rota, clima, busca ou infraestrutura ficam sujeitos às políticas de retenção e exclusão desses próprios provedores.</p>
 
   <h2>12. Segurança</h2>
   <p>As comunicações externas usadas pelo app são realizadas por HTTPS com os serviços externos usados pelo aplicativo.</p>
