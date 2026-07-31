@@ -59,7 +59,7 @@
 <body>
 <main>
   <h1>Política de Privacidade do CPNav</h1>
-  <p class="muted">Última atualização: 27 de julho de 2026</p>
+  <p class="muted">Última atualização: 31 de julho de 2026</p>
 
   <div class="box">
     <p><strong>Contato de suporte e privacidade:</strong><br>
@@ -69,19 +69,19 @@
   </div>
 
   <h2>1. Sobre o aplicativo</h2>
-  <p>O CPNav é um aplicativo em fase de protótipo e teste interno para apoio a viagens de motocicleta, navegação, leitura climática, alertas de estrada e preparação offline de informações essenciais ao longo da rota.</p>
-  <p>O CPNav é um projeto pessoal, gratuito, de uso livre, sem finalidade comercial, sem publicidade e sem objetivo de monetização por dados. O app foi criado para ajudar pessoas que viajam, acampam, caminham por trilhas, andam de moto ou precisam avaliar condições climáticas ao longo de uma rota.</p>
-  <p>O app não possui anúncios, não possui compras internas, não possui assinatura, não exige inscrição, não exige conta de usuário e não pede e-mail para funcionar.</p>
+  <p>O CPNav é um aplicativo em fase de protótipo e teste interno para apoio a viagens por estrada, navegação, consulta de clima, alertas de rota e preparação offline de informações essenciais ao trajeto.</p>
+  <p>É um projeto pessoal, gratuito e sem finalidade comercial. CPNav é uma identificação funcional do aplicativo, não uma empresa, produto comercial, serviço profissional, marca explorada economicamente ou serviço oficial de navegação ou meteorologia.</p>
+  <p>O app funciona sem anúncios, compras internas, cobrança, assinatura, inscrição, conta de usuário ou e-mail obrigatório.</p>
 
   <h2>2. Compromisso de privacidade</h2>
   <p>O CPNav foi desenhado para funcionar sem identificar o usuário. Nesta versão:</p>
   <ul>
-    <li>não há cadastro, login, perfil, senha ou identificador próprio de conta;</li>
-    <li>não há anúncios, rede de publicidade, SDK de propaganda ou promoção paga dentro do app;</li>
-    <li>não há telemetria comercial, analytics de marketing, rastreamento publicitário ou criação de perfil para venda;</li>
-    <li>não vendemos, alugamos, compartilhamos para monetização ou negociamos dados de usuários;</li>
-    <li>não usamos dados de localização, rotas, buscas ou preferências para publicidade, pontuação comercial, corretagem de dados ou segmentação de anúncios;</li>
-    <li>não exigimos nome, e-mail, telefone, documento ou qualquer identificação pessoal para usar o aplicativo;</li>
+    <li>não há cadastro, inscrição, login, perfil, senha ou identificador próprio de conta;</li>
+    <li>não há cobrança, compra interna, assinatura, plano pago ou bloqueio por conta;</li>
+    <li>não há anúncios, rede de publicidade, SDK de propaganda, analytics de marketing ou rastreamento publicitário;</li>
+    <li>não vendemos, alugamos, monetizamos ou negociamos dados de usuários;</li>
+    <li>não usamos localização, rotas, buscas ou preferências para publicidade, corretagem de dados ou segmentação de anúncios;</li>
+    <li>não exigimos nome, e-mail, telefone, documento ou outra identificação pessoal para usar o app;</li>
     <li>não criamos identificador digital próprio do aplicativo para reconhecer o usuário em servidor, conta, publicidade ou telemetria.</li>
   </ul>
   <p>O aplicativo móvel não usa cookies próprios para rastrear o usuário. As preferências ficam no armazenamento local do app, como SQLite e <code>shared_preferences</code>, e não em cookies publicitários. Se o usuário abrir links externos no navegador, esses sites externos podem aplicar suas próprias políticas.</p>
@@ -94,14 +94,15 @@
     <li>localização aproximada;</li>
     <li>localização precisa;</li>
     <li>histórico de pesquisa no app, como buscas textuais e endereços consultados;</li>
-    <li>outras ações do usuário, como rotas, destinos, paradas, waypoints e escolhas de planejamento.</li>
+    <li>outras ações do usuário, como rotas, destinos, paradas, waypoints, preferências de caminho digitadas no chat de rota e escolhas de planejamento.</li>
   </ul>
-  <p>Esses dados podem incluir coordenadas pesquisadas, coordenadas da posição atual, pontos de rota, destino, paradas e texto digitado em busca. Eles são usados para obter clima, mapa, rota, geocodificação, pontos de apoio, infraestrutura de estrada e informações de tráfego quando o recurso estiver habilitado.</p>
+  <p>Esses dados podem incluir coordenadas pesquisadas, coordenadas da posição atual, pontos de rota, destino, paradas, preferência de passagem por cidade ou estrada e texto digitado em busca. Eles são usados para obter clima, mapa, rota, geocodificação, pontos de apoio, infraestrutura de estrada, sugestões de parada e informações de tráfego quando o recurso estiver habilitado.</p>
 
   <p>Dados usados localmente no dispositivo:</p>
   <ul>
     <li>histórico local de rotas salvas;</li>
-    <li>infraestrutura offline;</li>
+    <li>infraestrutura offline e base offline de pontos de apoio derivadas de OpenStreetMap;</li>
+    <li>índice offline de municípios e localidades derivado de OpenStreetMap;</li>
     <li>cache/SQLite offline, incluindo cache climático temporário e âncoras de rota;</li>
     <li>preferências do usuário;</li>
     <li>chave TomTom inserida pelo próprio usuário, quando esse recurso é utilizado;</li>
@@ -113,13 +114,15 @@
   <h2>4. Finalidade de uso</h2>
   <p>Esses dados são usados para funcionalidade do app, incluindo:</p>
   <ul>
-    <li>mostrar a posição do piloto no mapa;</li>
+    <li>mostrar a posição do condutor no mapa;</li>
     <li>calcular, acompanhar e recalcular rotas;</li>
     <li>exibir manobras e alertas de navegação;</li>
     <li>consultar clima local e clima ao longo da rota;</li>
     <li>avisar sobre chuva, vento, baixa visibilidade, aquaplanagem e outros fatores que afetam a dirigibilidade;</li>
     <li>buscar postos, borracharias, oficinas, alimentação, hospitais e apoio essencial;</li>
     <li>preparar dados offline para trechos sem sinal de celular;</li>
+    <li>resolver nomes de municípios e localidades por referência offline auxiliar;</li>
+    <li>sugerir paradas de apoio próximas da rota conforme limite de fadiga configurado, posição no trajeto e presença estimada de combustível, café, banheiro, alimentação ou descanso;</li>
     <li>salvar histórico local de rotas e expedições;</li>
     <li>importar planos de viagem fornecidos pelo usuário e gravá-los como expedições no SQLite interno do aplicativo.</li>
   </ul>
@@ -127,7 +130,7 @@
 
   <h2>5. Compartilhamento com terceiros</h2>
   <p>O CPNav não vende dados pessoais, não compartilha dados para monetização e não usa dados para publicidade.</p>
-  <p>Para funcionar, o app pode enviar coordenadas, rotas, buscas textuais ou chaves fornecidas pelo usuário a serviços externos usados diretamente pelo aplicativo. Isso ocorre apenas para entregar a função solicitada, como clima, mapa, rota, busca ou ponto de apoio. Os serviços externos podem incluir, conforme configuração e disponibilidade:</p>
+  <p>Para funcionar, o app pode enviar coordenadas, rotas, buscas textuais, preferências de caminho ou chaves fornecidas pelo usuário a serviços externos usados diretamente pelo aplicativo. Isso ocorre apenas para entregar a função solicitada, como clima, mapa, rota, busca, sugestão de parada ou ponto de apoio. Os serviços externos podem incluir, conforme configuração e disponibilidade:</p>
   <ul>
     <li>Open-Meteo;</li>
     <li>MET Norway;</li>
@@ -137,17 +140,29 @@
     <li>Photon;</li>
     <li>TomTom, quando o usuário fornece uma chave própria.</li>
   </ul>
-  <p>Esses serviços são usados para clima, mapas, tiles, rotas, geocodificação, pontos de interesse, tráfego ou infraestrutura de rota. O CPNav não envia nome, e-mail, cadastro, identificador próprio de conta, identificador publicitário ou identificador digital próprio do aplicativo, porque o app não possui esses dados. Ainda assim, provedores externos podem receber informações técnicas normais de rede, como IP, User-Agent, coordenadas e a própria consulta necessária, conforme as políticas de cada serviço. O tratamento desses dados pelos provedores segue os termos e políticas de privacidade deles. O CPNav não controla as políticas de privacidade desses terceiros.</p>
+  <p>Esses serviços recebem apenas o necessário para executar a função solicitada. O CPNav não envia nome, e-mail, cadastro, identificador próprio de conta, identificador publicitário ou identificador digital próprio do app, porque não possui esses dados. Ainda assim, provedores externos podem receber IP, User-Agent, coordenadas e consultas, conforme os termos e políticas deles.</p>
+  <p>A gratuidade do CPNav não altera licenças, limites, regras de atribuição, disponibilidade ou restrições de terceiros. Dados, APIs, marcas, mapas, tiles, modelos meteorológicos, resultados de busca e rotas externas não se tornam conteúdo próprio do aplicativo.</p>
 
   <p>O app solicita apenas as permissões necessárias para as funções oferecidas nesta versão, como internet, estado de rede, localização, notificações de navegação, serviço em primeiro plano de localização e recursos de integração automotiva quando disponíveis no dispositivo.</p>
 
-  <h2>6. Open-Meteo e uso não comercial</h2>
-  <p>O CPNav usa a API gratuita da Open-Meteo apenas no contexto de um projeto pessoal, gratuito, sem assinatura, sem publicidade e sem fins comerciais. Esse uso segue a condição de uso não comercial indicada pela Open-Meteo para a API gratuita, respeitando os limites operacionais aplicáveis.</p>
-  <p>Os dados meteorológicos da Open-Meteo são usados para consulta de clima local e clima ao longo da rota. O app pode adaptar, normalizar, combinar, armazenar temporariamente em cache e transformar esses dados em alertas visuais, marcadores, timeline climática e avisos operacionais. A atribuição e os links de licença constam nos créditos e nas telas onde os dados meteorológicos são exibidos.</p>
+  <h2>6. Serviços meteorológicos e uso não comercial</h2>
+  <p>O CPNav usa Open-Meteo em contexto pessoal, gratuito, sem assinatura, publicidade ou fins comerciais, respeitando os limites da API gratuita e a licença CC BY 4.0. Dados podem ser adaptados, normalizados, combinados, armazenados temporariamente em cache e transformados em alertas visuais, marcadores e timeline climática, com atribuição nos créditos e telas aplicáveis.</p>
+  <p>MET Norway / api.met.no pode ser usado como fallback meteorológico. O app deve manter identificação técnica adequada, cache, respeito aos cabeçalhos de expiração, atribuição quando aplicável e demais condições públicas do serviço. Nenhuma previsão do CPNav substitui boletim oficial, alerta governamental, avaliação de segurança ou consulta meteorológica oficial.</p>
 
   <h2>7. Armazenamento local</h2>
-  <p>O app pode armazenar dados localmente no dispositivo, incluindo rotas salvas, expedições, planos importados por arquivo JSON do plan-nav-clima, infraestrutura offline, cache/SQLite offline, cache climático temporário, âncoras de rota, preferências do usuário e chave TomTom quando fornecida.</p>
+  <p>O app pode armazenar dados localmente no dispositivo, incluindo rotas salvas, expedições, planos importados por arquivo JSON do plan-nav-clima, infraestrutura offline, base offline de pontos de apoio, índice offline de municípios e localidades, cache/SQLite offline, cache climático temporário, âncoras de rota, preferências do usuário e chave TomTom quando fornecida.</p>
   <p>Esses dados ficam no armazenamento do aplicativo no dispositivo. Nesta fase, o app não possui servidor próprio de conta, sincronização ou identificação de usuário.</p>
+  <p>As bases offline derivadas de OpenStreetMap distribuídas com o aplicativo foram geradas a partir de extratos públicos da Geofabrik. Os dados brutos podem ser acessados nas páginas oficiais:</p>
+  <ul>
+    <li><a href="https://download.geofabrik.de/south-america/brazil.html">Brasil - Geofabrik OpenStreetMap Extracts</a></li>
+    <li><a href="https://download.geofabrik.de/south-america/argentina.html">Argentina - Geofabrik OpenStreetMap Extracts</a></li>
+    <li><a href="https://download.geofabrik.de/south-america/chile.html">Chile - Geofabrik OpenStreetMap Extracts</a></li>
+    <li><a href="https://download.geofabrik.de/south-america/paraguay.html">Paraguai - Geofabrik OpenStreetMap Extracts</a></li>
+    <li><a href="https://download.geofabrik.de/south-america/uruguay.html">Uruguai - Geofabrik OpenStreetMap Extracts</a></li>
+    <li><a href="https://www.openstreetmap.org/copyright">OpenStreetMap - Copyright and License</a></li>
+    <li><a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL) 1.0</a></li>
+  </ul>
+  <p>A Geofabrik e o OpenStreetMap não recebem cadastro, conta, e-mail ou identificador próprio do CPNav por causa dessas bases offline já empacotadas no aplicativo.</p>
 
   <h2>7.1. Planejador desktop</h2>
   <p>O planejador desktop é um pacote complementar de planejamento de viagens para computador, distribuído como PWA local para Windows, Linux e macOS. Ele não inclui instaladores Android ou iOS.</p>
@@ -158,6 +173,7 @@
 
   <h2>8. Chave TomTom</h2>
   <p>A chave TomTom é opcional e inserida pelo usuário. Ela é usada somente para acionar os serviços TomTom configurados no app.</p>
+  <p>O CPNav não fornece, revende, sublicencia ou incorpora chave TomTom própria. O uso depende da autorização, plano, cota, termos, disponibilidade e restrições da conta TomTom do próprio usuário. Cabe ao usuário verificar se a chave utilizada permite o tipo de consulta realizada no aplicativo.</p>
   <p>A chave fica armazenada localmente no dispositivo. O usuário pode remover a chave nas configurações do app.</p>
 
   <h2>9. Voz e microfone</h2>
@@ -178,8 +194,11 @@
   <p>Os dados locais ficam no armazenamento do aplicativo no dispositivo. O app não declara criptografia local própria para todos os dados armazenados.</p>
 
   <h2>13. Protótipo, uso informativo e segurança</h2>
-  <p>O app está em desenvolvimento. Rotas, clima, alertas, pontos de interesse e dados offline podem estar incompletos ou incorretos.</p>
-  <p>O aplicativo não substitui sinalização viária, mapas oficiais, normas de trânsito, condições reais da estrada, boletins meteorológicos oficiais, julgamento do piloto ou preparação adequada para viagem, trilha, acampamento ou deslocamento. O CPNav serve como ferramenta informativa e referência secundária.</p>
+  <p>O app está em desenvolvimento. Rotas, clima, alertas, pontos de interesse, sugestões de parada, dados offline e serviços online podem estar incompletos, incorretos, indisponíveis, atrasados, duplicados ou desatualizados. O CPNav não controla a atualização, cobertura, exatidão, continuidade ou disponibilidade de fontes externas.</p>
+  <p>As sugestões de parada e a pontuação de apoio são estimativas informativas. Elas não garantem qualidade comercial, atendimento, segurança, preço, disponibilidade de combustível, funcionamento no horário de passagem ou condição atual do estabelecimento.</p>
+  <p>O aplicativo não substitui sinalização viária, mapas oficiais, normas de trânsito, condições reais da estrada, boletins oficiais, julgamento do condutor ou preparação adequada para viagem, trilha, acampamento ou deslocamento. Informações relevantes devem ser conferidas com fontes públicas e oficiais.</p>
+  <p>Em caso de divergência, prevalecem sempre legislação local, ordens de autoridades, bloqueios, sinalização, semáforos, placas, regras de circulação, condições reais da via, boletins oficiais e orientação de agentes públicos. O CPNav não autoriza infração, acesso proibido, manobra insegura ou descumprimento de norma local.</p>
+  <p>O usuário e o condutor permanecem responsáveis por decidir se rota, parada, estrada, horário, veículo, clima e condições reais permitem o deslocamento. Na medida permitida pela legislação aplicável, o CPNav não oferece garantia de precisão, atualização, continuidade, disponibilidade, adequação a finalidade específica, qualidade comercial de locais indicados ou ausência de falhas.</p>
 
   <h2>13.1. Serviços externos e ausência de afiliação</h2>
   <p>O CPNav pode abrir ou exportar rotas para GMaps ou outros aplicativos externos quando o usuário escolhe essa ação. Essa exportação não significa que o aplicativo seja oficial, patrocinado, certificado, endossado ou mantido pelo Google, TomTom, OpenStreetMap, Open-Meteo, MET Norway, OSRM, OpenFreeMap, OpenMapTiles, MapLibre, Android, Android Auto ou qualquer outro provedor citado.</p>
